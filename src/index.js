@@ -4,6 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
+function formatName(user) {
+  return user.firstName + " " + user.lastName;
+}
 
-reportWebVitals();
+const user = {
+  firstName: "Mohamed",
+  lastName: "Faaris",
+};
+
+const element = (
+  <div>
+    <h1>Hello, {formatName(user)}!</h1>
+    <h2>Good to see you here.</h2>
+  </div>
+);
+
+ReactDOM.render(element, document.getElementById("root"));
