@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
+
 import "tailwindcss/dist/tailwind.css";
-import RegistrationForm from "./RegistrationForm"
+import PricingPlan from "./Components/PricingPlan";
 
 function App() {
   return (
     <div className="App">
-      <RegistrationForm />
+      <PricingPlan />
     </div>
   );
 }
